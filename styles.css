@@ -1,37 +1,66 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Example of a modern font */
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
-    color: #333; /* Adjusted color for better contrast */
+.chat-window {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px; /* Increased margin for better spacing */
-    border: 1px solid #ccc; /* Added border for input fields */
-    border-radius: 5px; /* Rounded corners */
-    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+#chat-log {
+    height: 200px;
+    overflow-y: auto;
 }
 
-input:focus {
+.chat-input {
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+input[type="password"]:focus {
     outline: none;
-    border-color: #007bff; /* Highlight border color on focus */
+    border-color: #007bff;
 }
 
 button {
-    padding: 12px 24px;
+    padding: 10px 20px;
+    margin-left: 10px;
     background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 5px;
+    color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
     background-color: #0056b3;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added shadow on hover for depth */
 }
+
+#result {
+    margin-top: 20px; /* Increase margin for better spacing */
+    padding: 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Add border radius for a rounded appearance */
+    background-color: rgba(0, 255, 0, 0.1); /* Semi-transparent background */
+    color: #0f0;
+    font-weight: bold; /* Make text bold for emphasis */
+}
+
